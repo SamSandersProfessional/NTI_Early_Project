@@ -1,0 +1,211 @@
+/*Nat*/
+@media only screen and (min-width:1024px){
+	body, html {
+		margin:0;
+		padding:0;	
+		background-color: whitesmoke;
+	}
+	
+	li {
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	
+	header {
+		display: flex;
+		background-color:rgb(190, 0, 0);
+		justify-content: space-between;
+		align-items: center;
+	}
+	
+	.navlinks li {
+		display: inline-block;
+		padding: 1px 20px;
+	}
+	
+	main {
+		margin-bottom: 4em;
+	}
+	
+	.page {
+		font-family: Arial, Helvetica, sans-serif;
+		text-align: left;
+		margin-inline-start: 20%;
+		margin-inline-end: 20%;
+	}
+	
+	p, dl, legend {
+		font-size: 1rem;
+	}
+	
+	h2 {	
+		font-weight: 600;
+		font-size: 3rem;
+	}
+	
+	h3 {
+		font-size: 1.7rem;
+	}
+	
+	h4 {
+		font-size: 1.3rem;
+	}
+	
+	dl {
+		line-height: 2em;
+	}
+	
+	#shield dt {
+		font-weight: bold;
+	}
+	
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 0.4em 69px;
+		text-decoration: none;
+	}
+	
+	li a:hover {
+		background-color: darkred;
+		font-style: underline;
+	}
+	
+	.headshotsColumn {
+		float: left;
+		width: 33.33%;
+		padding: 0px;
+		margin-bottom: 50px;
+	}
+	
+	.headshotsColumn p {
+		font-size: medium;
+		width: 65%;
+	}
+	
+	.headshotsRow::after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	
+	.app {
+		background-color: rgb(136, 136, 138);
+		width: 17em;
+		border-style: solid;
+		border-top-left-radius: 2em;
+		border-bottom-right-radius: 2em;
+		text-align: center;
+	}
+
+	button {
+		border-radius: 2rem;
+		background-color: greenyellow;
+	}
+	
+	footer { 
+		height: 5em;
+		background-color: rgb(190, 0, 0);
+		color: white;
+		width: 100%;
+		text-align: center;
+	}
+	
+	#cto {
+		height: 6em;
+		width: 24rem;
+		position: relative;
+		left: 25%;
+		background-color: greenyellow;
+		border-radius: 20px;
+	}
+	
+	#cto a {
+		text-decoration: none;
+		font-family: Arial, Helvetica, sans-serif;
+		font-size: xx-large;
+		color: whitesmoke;
+	}
+	
+	label {
+		display: block;
+	}
+}
+
+
+@media only screen and (max-width:768px) {
+	body, html {
+		margin:0;
+		padding:0;	
+		background-color: whitesmoke;
+	}
+
+	#cto {
+		height: 6em;
+		width: 20rem;
+		background-color: greenyellow;
+		border-radius: 20px;
+		display: block;
+	}
+	
+	li {
+		font-family: Arial, Helvetica, sans-serif;
+		padding: 1px;
+		width: fit-content;
+		display: inline;
+	}
+
+	li a {
+		display: block;
+		color: white;
+		text-align: center;
+		padding: 1px;
+		text-decoration: none;
+		width: fit-content;
+	}
+
+	#logo {
+		padding: none;
+		width: fit-content;
+	}
+	
+	header {
+		display: flex;
+		background-color:rgb(190, 0, 0);
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	p, dl, legend {
+		font-size: 1.0rem;
+	}
+	
+	h2 {	
+		display: block;
+		font-weight: 600;
+		font-size: 3rem;
+	}
+	
+	h3 {
+		font-size: 1.7rem;
+	}
+	
+	h4 {
+		font-size: 1.3rem;
+	}
+	
+	
+	.navlinks li {
+		display: inline-block;
+		padding: 1px 20px;
+	}
+
+	.column {
+		width: 100%;
+	}
+
+	button {
+		border-radius: 2rem;
+		background-color: greenyellow;
+	}
+}

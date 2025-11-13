@@ -1,0 +1,79 @@
+<!--Sam-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+		<!--Head Elements: contains a title for the tab, some information for initialising the page and a link to the javascript page wp.js
+		 -->
+        <title>Covid Test and Trace</title>
+        <link rel="stylesheet" href="test.css">
+        <meta name="viewport" content="device-width, initial-scale=1.0">
+		<script src="wp.js" defer></script>
+    </head>
+    <body>
+		<!--creates an audio object an ads an id "sound" to it. -->
+		<audio id="sound" source src="MouseClick.mp3"></audio>
+		<header>
+			<!-- header elements contain a logo image and a navigational list around the website as well as a button to book a test. -->
+			<img class ="logo" src="NTI logo (2).png" alt="NTI" width="100" height="50">			
+			<nav>
+				<ul class="navlinks">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="info.html">Info</a></li>
+					<li><a href="teaminfo.html">Team Info</a></li>
+				</ul>    
+			</nav>
+			<a href="signup.html"><button>Book a Test</button></a>
+		</header>        
+        
+		<div class="page">
+			<main>
+			<!-- main class contains multiple headers of different sizes, an information paragraph and 3 pictures of each team member.
+			under the pictures is a paragraph element for each student. There's also a link requesting the user to download the NHS app.
+			-->
+				<h2>Team Information</h2>
+				<p>
+					The Norwich Testing Initiative (NTI) is a newly formed initiative which will launch a large-scale
+					screening pilot for SARS-CoV-2, the virus which causes the COVID-19 disease. The pilot begins
+					on Monday 4 January 2021 and runs for four weeks. 
+				</p>
+                
+				<h3> Team Members </h3>
+				
+				<div class="headshotsRow">
+					<div class="headshotsColumn">
+						<img src="SamSandersHeadshot.jpg" alt="Headshot Placeholder" style="width:60%" height="175">
+						<br/>
+						<h4>Sam Sanders</h4>
+						<p>Sam is an 18 year-old Computer Science student from Surrey, England, studying at UEA.</p>
+					</div>
+					
+					<div class="headshotsColumn">
+						<img src="HarryWebbHeadshot.jpg" alt="Headshot Placeholder" style="width:60%" height="175">
+						<br/>
+						<h4>Harry Webb-Mortimer</h4>
+						<p>Harry is currently studying Computer Science at UEA in Norwich, where he was born.</p>
+					</div>
+				
+					<div class="headshotsColumn">
+						<img src="NatFromageHeadshot.jpg" alt="Headshot Placeholder" style="width:60%" height="175">
+						<br/>
+						<h4>Nat Fromage</h4>
+						<p>Nat is a computer science student studying at UEA. He’s 20 years old and grew up in the seaside town, Walcott.</p>
+					</div>
+				</div>
+				
+				<div class="app">
+					<h3>NHS COVID-19 app</h3>
+					<a href="https://covid19.nhs.uk/">Download the NHS COVID-19 app</a><br>
+				</div>
+			</main>
+        </div>
+		
+        <footer>
+		<!-- In the footer there is a copyright notice for NTI -->
+            <div>
+                Copyright ©2020 NTI</br>
+            </div>
+        </footer>
+    </body>
+</html>

@@ -1,0 +1,114 @@
+<!--Harry-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Register for a test.</title>
+        <link rel="stylesheet" href="test.css">
+        <meta name="viewpoint" content="device-width, initial-scale=1.0">
+		<script src="wp.js" defer></script>
+    </head>
+    <body>
+
+        <!-- audio tag used by js to make click sound -->
+		<audio id="sound" source src="MouseClick.mp3"></audio>
+        <header>
+
+            <!--NTI header logo-->
+            <img class ="logo" src="NTI logo (2).png" alt="NTI" width="100" height="50">	
+            
+            <!--Navigation bar-->
+			<nav>
+                <ul class="navlinks">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="teaminfo.html">Team Info</a></li>
+                </ul>    
+            </nav>
+            <a href="signup.html"><button>Book a Test</button></a>
+        </header>        
+
+        <div class="page">
+            <main>
+                <h2>Book a test</h2>
+                <p>Required information is marked with an asterisk (*)</p>
+
+                <!--Form to book test date-->
+                <form action="/submit" method="POST">
+                    <fieldset>
+                        <legend>Contact:</legend>
+                        <label for="first_name">First Name:*</label>
+                        <input type="text" name="first_name" placeholder="e.g 'John'" required>
+                        <label for="last_name">Last Name:*</label>
+                        <input type="text" name="last_name" placeholder="e.g 'Smith'" required>
+                        <label for="email">Email:*</label>
+                        <input type="email" name="email" placeholder="e.g 'john.smith@gmail.com'" required>
+                        <label for="mobile">Mobile Number:*</label>
+                        <input type="tel" name="mobile" placeholder="e.g 07123456789" required>
+                        <label for="house_number">House Number:</label>
+                        <input type="tel" name="house_number" placeholder="House Number..." required>
+                        <label for="postcode">Postcode:*</label>
+                        <input type="text" name="postcode" pattern="([Gg][Ii][Rr] 0[Aa]{2})|((([A-Za-z][0-9]{1,2})|(([A-Za-z][A-Ha-hJ-Yj-y][0-9]{1,2})|(([A-Za-z][0-9][A-Za-z])|([A-Za-z][A-Ha-hJ-Yj-y][0-9][A-Za-z]?))))\s?[0-9][A-Za-z]{2})" placeholder="e.g AB12 3CD" required>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Personal Information:</legend>
+                        <div id="account">
+                            <label for="username">Username:*</label>
+                            <input type="text" name="username" pattern="[a-zA-Z0-9]+$" placeholder="e.g JohnSmith1" required>
+                            <label for="password">Password:*</label>
+                            <input type="password" name="password" placeholder="Password" required>
+                            <label for="age">Age:*</label>
+                            <input type="number" name="age" placeholder="e.g 21" required>
+                        </div>
+
+                        <label for="gender">Please select your gender:*</label> 
+                        <input list="genders" name="gender" required>
+                        <datalist id="genders">
+                            <option value="Male">
+                            <option value="Female">
+                            <option value="Other">
+                        </datalist>
+
+                        <label for="ethnicity">Please select your ethnicity:*</label> 
+                        <input list="ethnicities" name="ethnicity" required>
+                        <datalist id="ethnicities">                  
+                            <option value="British">
+                            <option value="Irish">
+                            <option value="Gypsy or Irish Traveller">
+                            <option value="Any other White background"></option>
+                            <option value="White and Black Caribbean">
+                            <option value="White and Black African">
+                            <option value="White and Asian">
+                            <option value="other mixed or multiple"></option>
+                            <option value="Indian">
+                            <option value="Pakistani">
+                            <option value="Bangladeshi">
+                            <option value="Chinese">
+                            <option value="Any other Asian background"></option>
+                            <option value="African">
+                            <option value="Caribbean">
+                            <option value="Any other Black, African or Caribbean background"></option>
+                            <option value="Arab">
+                            <option value="Any other ethnic group">
+                        </datalist>
+                        </fieldset>
+
+                        <label for="meeting-time">Book a slot for your:</label>
+
+                        <!--Creates calendar to select date and time-->
+                        <input type="datetime-local" id="meeting-time"
+                               name="meeting-time" max="2021-12-T00:00">
+
+                        <label for="comments">Comments:</label>
+                        <textarea name="comments" rows="5" cols="35"></textarea>
+                        <input type="submit" id="submit" value="Send Now">    
+                </form>
+            </main>
+        </div>
+        <footer>
+            <div>
+                Copyright ©2020 NTI</br>
+            </div>
+        </footer>
+    </body>
+</html>
